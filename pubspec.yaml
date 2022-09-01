@@ -2,6 +2,7 @@ name: f_yc_pangle
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
+publish_to: none
 
 environment:
   sdk: ">=2.17.5 <3.0.0"
@@ -10,6 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get: ^4.6.5
+  flutter_pangle_ads: ^2.5.0
+  f_yc_utils:
+    git: https://github.com/yhfworking/f_yc_utils.git
+  f_yc_config:
+    git: https://github.com/yhfworking/f_yc_config.git
 
 dev_dependencies:
   flutter_test:
