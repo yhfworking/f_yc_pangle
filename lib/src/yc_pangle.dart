@@ -2,7 +2,6 @@ import 'package:f_yc_config/f_yc_config.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_pangle_ads/flutter_pangle_ads.dart';
-import 'package:get/get.dart';
 
 class YcPangle {
   static Future<void> init(String appId) async {
