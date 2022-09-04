@@ -20,7 +20,7 @@ class YcPangle {
             event.adId == YcConfig.pangleRewardAdId() &&
             event.userId == YcConfig.userInfo().userId!) {
           // if (event.customData == 'timerRewardRe') {
-          //   int amount = await ComponentsApisDefault.receiveTimerRewardRe();
+          //   int amount = await YcApisDefault.receiveTimerRewardRe();
           //   await StoragesDefault.to.setRewardAmount(amount);
           // } else if (event.customData == 'sign') {
           //   int amount = await ComponentsApisDefault.submitSign();
