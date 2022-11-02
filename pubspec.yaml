@@ -11,10 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.6.5
-  flutter_pangle_ads: ^2.6.0
-  f_yc_utils:
-    git: https://github.com/yhfworking/f_yc_utils.git
+  flutter_pangle_ads: ^2.6.1
   f_yc_config:
     git: https://github.com/yhfworking/f_yc_config.git
 
