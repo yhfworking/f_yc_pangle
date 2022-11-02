@@ -8,7 +8,7 @@ import 'package:flutter_pangle_ads/flutter_pangle_ads.dart';
 export './f_yc_pangle.dart';
 export 'package:flutter_pangle_ads/flutter_pangle_ads.dart';
 
-class FYcPangleInitializer {
+class FYcPangle {
   ///初始化
   static initializer() async {
     FYcConfigPangleConfig pangleConfig = FYcConfigConfigurator.instance
