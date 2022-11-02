@@ -10,6 +10,7 @@ class FYcPangleInitializer {
     FYcConfigPangleConfig pangleConfig = FYcConfigConfigurator.instance
         .getConfig(configId: KIT_CONFIG_ID)
         .pangleConfig;
+    log('-----pangleConfig---${pangleConfig.appId}');
     bool isInit = await FlutterPangleAds.initAd(pangleConfig.appId);
     if (kDebugMode) {
       log(isInit ? '穿山甲初始化成功！' : '穿山甲初始化失败！');
