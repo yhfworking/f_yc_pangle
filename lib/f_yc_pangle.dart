@@ -65,7 +65,7 @@ class FYcPangle {
         return false;
       }
     }
-    if (pangleConfig.rewardAdId != '') {
+    if (pangleConfig.rewardAdId == '') {
       return false;
     }
     return await FlutterPangleAds.showRewardVideoAd(pangleConfig.rewardAdId,
