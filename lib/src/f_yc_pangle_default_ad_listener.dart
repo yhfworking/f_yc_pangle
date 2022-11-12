@@ -12,30 +12,30 @@
 //             event.customData != null &&
 //             event.adId == YcConfig.pangleRewardAdId() &&
 //             event.userId == YcConfig.userInfo().userId!) {
-//           // if (event.customData == 'timerRewardRe') {
-//           //   int amount = await YcApisDefault.receiveTimerRewardRe();
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // } else if (event.customData == 'sign') {
-//           //   int amount = await ComponentsApisDefault.submitSign();
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // } else if (event.customData == 'continuitySign3') {
-//           //   int amount = await ComponentsApisDefault.receiveContinuitySign(3);
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // } else if (event.customData == 'continuitySign7') {
-//           //   int amount = await ComponentsApisDefault.receiveContinuitySign(7);
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // } else if (event.customData == 'continuitySign30') {
-//           //   int amount = await ComponentsApisDefault.receiveContinuitySign(30);
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // } else if (event.customData == 'continuitySign365') {
-//           //   int amount = await ComponentsApisDefault.receiveContinuitySign(365);
-//           //   await StoragesDefault.to.setRewardAmount(amount);
-//           // }
-//           // await ComponentsApisDefault.reportRewaedAdEvent(
-//           //     slotID: appId,
-//           //     adnName: 'pangle',
-//           //     adnSlotID: event.adId,
-//           //     customData: event.customData.toString());
+//           if (event.customData == 'timerRewardRe') {
+//             int amount = await YcApisDefault.receiveTimerRewardRe();
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           } else if (event.customData == 'sign') {
+//             int amount = await ComponentsApisDefault.submitSign();
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           } else if (event.customData == 'continuitySign3') {
+//             int amount = await ComponentsApisDefault.receiveContinuitySign(3);
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           } else if (event.customData == 'continuitySign7') {
+//             int amount = await ComponentsApisDefault.receiveContinuitySign(7);
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           } else if (event.customData == 'continuitySign30') {
+//             int amount = await ComponentsApisDefault.receiveContinuitySign(30);
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           } else if (event.customData == 'continuitySign365') {
+//             int amount = await ComponentsApisDefault.receiveContinuitySign(365);
+//             await StoragesDefault.to.setRewardAmount(amount);
+//           }
+//           await ComponentsApisDefault.reportRewaedAdEvent(
+//               slotID: appId,
+//               adnName: 'pangle',
+//               adnSlotID: event.adId,
+//               customData: event.customData.toString());
 //         }
 //       }
 //       if (event.action == AdEventAction.onAdClosed) {
