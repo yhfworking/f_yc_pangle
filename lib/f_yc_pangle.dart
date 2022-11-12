@@ -4,8 +4,6 @@ import 'dart:developer';
 import 'package:f_yc_config/f_yc_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_pangle_ads/flutter_pangle_ads.dart';
-
-export './f_yc_pangle.dart';
 export 'package:flutter_pangle_ads/flutter_pangle_ads.dart';
 
 class FYcPangle {
