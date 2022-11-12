@@ -1,5 +1,6 @@
 library f_yc_pangle;
 
+import 'dart:convert';
 import 'dart:developer';
 import 'package:f_yc_config/f_yc_config.dart';
 import 'package:flutter/foundation.dart';
@@ -51,15 +52,15 @@ class FYcPangle {
   }
 
   static Future<bool> showRewardVideoAd(
-      {String? customData = '', String? userId = ''}) async {
+      {String? key = '', int? amount = 0, String? userId = ''}) async {
     FYcConfigAllConfig allConfig =
         FYcConfigConfigurator.instance.getConfig(configId: KIT_CONFIG_ID);
     FYcConfigCommonConfig commonConfig = allConfig.commonConfig;
-    FYcConfigPangleConfig pangleConfig = allConfig.pangleConfig;
     if (commonConfig.isInR()) {
       return false;
     }
-    if (customData == 'timerRewardRe') {
+    FYcConfigPangleConfig pangleConfig = allConfig.pangleConfig;
+    if (key == 'timerRewardRe') {
       if (!pangleConfig.isRewardAdEnableShow()) {
         return false;
       }
@@ -68,6 +69,7 @@ class FYcPangle {
       return false;
     }
     return await FlutterPangleAds.showRewardVideoAd(pangleConfig.rewardAdId,
-        customData: customData, userId: userId);
+        customData: jsonEncode(Map.from({'key': key, 'amount': amount})),
+        userId: userId);
   }
 }
