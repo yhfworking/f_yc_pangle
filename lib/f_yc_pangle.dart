@@ -27,7 +27,7 @@ class FYcPangle {
     if (kDebugMode || commonConfig.isInR()) {
       return;
     }
-    if (pangleConfig.splashAdId != '') {
+    if (pangleConfig.splashAdId == '') {
       return;
     }
     await FlutterPangleAds.showSplashAd(pangleConfig.splashAdId);
@@ -44,7 +44,7 @@ class FYcPangle {
     if (!pangleConfig.isInterstitialAdEnableShow()) {
       return false;
     }
-    if (pangleConfig.interstitialAdId != '') {
+    if (pangleConfig.interstitialAdId == '') {
       return false;
     }
     return await FlutterPangleAds.showFullScreenVideoAd(
